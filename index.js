@@ -128,32 +128,92 @@
 // }
 // console.log(Boolean(x));
 
-let randomNumber = Math.floor(Math.random() * 4);
-console.log(randomNumber);
+// let randomNumber = Math.floor(Math.random() * 4);
+// console.log(randomNumber);
 
-let arr = ["liv", "kamar", "derrick", "jimmy"];
+// let arr = ["liv", "kamar", "derrick", "jimmy"];
 
-console.log(arr[randomNumber]);
+// console.log(arr[randomNumber]);
 
-if (arr[randomNumber] === "liv") {
-  console.log("Hello world");
-} else if (arr[randomNumber] === "kamar") {
-  console.log("Whats poppin");
+// if (arr[randomNumber] === "liv") {
+//   console.log("Hello world");
+// } else if (arr[randomNumber] === "kamar") {
+//   console.log("Whats poppin");
+// } else {
+//   console.log("tech your wrong");
+// }
+
+// let ar = ["kamar", "lucy", "kite "];
+
+// if (ar[0] === "kamar") {
+//   console.log("kamar");
+// } else if (ar[1] === "lucy");
+
+// let randomnumber = Math.floor(Math.random() * 10);
+// console.log(randomnumber);
+// let prompt5 = prompt("guess the number");
+// if (randomnumber === prompt5) {
+//   alert("success");
+// } else {
+//   alert("failure!");
+// }
+
+///variables and data types
+let myName = "Lucycan";
+console.log(myName);
+console.log(typeof myName);
+
+////conditionals
+if (myName === "Collin") {
+  console.log(`Hello ${myName}`);
 } else {
-  console.log("tech your wrong");
+  console.log(false);
 }
 
-let ar = ["kamar", "lucy", "kite "];
+// for (// initializer; condition; iterator)
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
 
-if (ar[0] === "kamar") {
-  console.log("kamar");
-} else if (ar[1] === "lucy");
+/// arrays and methods
+let team = ["Lucycan", "Collin", "Mark", "Cortez"];
+console.log(team);
+console.log(team.length);
+/// push
+console.log(team.push("Derrick", "john"));
+console.log(team);
 
-let randomnumber = Math.floor(Math.random() * 10);
-console.log(randomnumber);
-let prompt5 = prompt("guess the number");
-if (randomnumber === prompt5) {
-  alert("success");
-} else {
-  alert("failure!");
+///pop
+console.log(team.pop());
+
+///join
+console.log(team.join(""));
+
+///slice returns a new array
+console.log(team);
+console.log(team.slice(1, 3));
+
+/// split
+let team1 = "john, mike ,kiersten, lucy ";
+console.log(team1);
+let teamSplit = team1.split();
+console.log(teamSplit);
+
+////looping through an array
+console.log(team);
+console.log(team[3]);
+
+/// looping thru an array
+
+let roles = ["Tech Manager", "TechFello", "Placement Manager", "Intern"];
+
+/// Hi my name is Kamar and im an Intern
+let rfp = prompt("enter your team name");
+let role1 = prompt("enter your team roles");
+console.log(rfp);
+let rfpsplit = rfp.split(",");
+let role1split = role1.split(",");
+console.log(role1);
+for (i = 0; i < rfpsplit.length; i++) {
+  console.log(`hi my name is ${rfpsplit[i]}`);
 }
